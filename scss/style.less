@@ -1,0 +1,71 @@
+@charset"utf-8";
+
+html,body,div,ul,li{
+  padding:0;
+  margin:0;
+}
+ul{
+  list-style:none;
+  height:40px;
+  line-height:40px;
+}
+a{
+  text-decoration:none;
+}
+header{
+  display:flex;
+  height:30px;
+}
+header .l,header .r {
+  flex: 0 0 150px ;
+  text-align:center;
+  border:1px solid #ccc
+
+}
+header .m{
+  flex:1;
+  text-align:center
+}
+header .m input{
+  width:90%;
+  height:28px;
+  border:1px solid #ccc;
+  border-radius:15px;
+
+}
+nav {
+  ul{
+    display:flex;
+    text-align:center;
+
+    & li{
+      flex:1 0 25%;
+    }
+  }
+}
+.car-wrapper ul{
+  /*ul要设置高度，才能使水平和垂直居中*/
+  height:200px;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border:1px solid;
+  .car-list{
+    flex:1 0 20%;
+    img{
+      width:40px;
+      height:40px;
+      display:block;
+      background:blue;
+      border-radius:20px;
+      margin: 0 auto;
+    }
+    a{
+      display:block;
+      width:100%;
+      text-align:center;
+
+    }
+  }
+}

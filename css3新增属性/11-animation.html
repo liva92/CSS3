@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <style>
+    /* 第一步：定义关键帧 */
+    @keyframes myfirst
+    {
+      0%   {background: red; left:0px; top:0px;}
+      25%  {background: yellow; left:200px; top:0px;}
+      50%  {background: blue; left:200px; top:200px;}
+      75%  {background: green; left:0px; top:200px;}
+      100% {background: red; left:0px; top:0px;}
+    }
+
+    /* 第二步：定义动画属性 */
+    div{
+      width: 200px;
+      height: 200px;
+      border:1px solid #ccc;
+
+    /* 第三步：执行动画 */
+      /*animation: myfirst 3s linear 1s infinite running;*/
+      /*必须设置动画持续时间*/
+    }
+
+    /* 第三步：执行动画 */
+    div:hover {
+      animation: myfirst 5s linear  infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

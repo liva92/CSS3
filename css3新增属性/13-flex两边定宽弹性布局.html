@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+@charset "utf-8";
+html,
+body,
+div {
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  height: 30px;
+}
+header .l,
+header .r {
+  flex: 0 0 150px ;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+header .m {
+  flex: 1;
+  text-align: center;
+}
+header .m input {
+  width: 90%;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+}
+html,
+body,
+div,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  height: 30px;
+}
+header .l,
+header .r {
+  flex: 0 0 150px ;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+header .m {
+  flex: 1;
+  text-align: center;
+}
+header .m input {
+  width: 90%;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+/*导航*/
+nav ul {
+  display: flex;
+  height:50px;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  flex: 1 0 25%;
+  text-align: center;
+}
+
+/*汽车列表*/
+.car-wrapper ul {
+  /*ul要设置高度，才能使水平和垂直居中*/
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  border: 1px solid;
+}
+.car-wrapper ul .car-list {
+  flex: 1 0 20%;
+}
+.car-wrapper ul .car-list img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: blue;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.car-wrapper ul .car-list a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="l">汽车之家</div>
+    <div class="m"><input type="text"></div>
+    <div class="r">用户</div>
+  </header>
+
+<!-- 导航 -->
+<nav>
+    <ul class="nav">
+      <li class="nav-item">
+        <div class="list">
+          <a href="" herf="#">链接1</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="list">
+          <a href="" herf="#">链接2</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="list">
+          <a href="" herf="#">链接3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="list">
+           <a href="" herf="#">链接4</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+<!-- 汽车列表 -->
+   <div class="car-wrapper">
+    <ul>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+      <li class="car-list"><img src="#" alt=""><a href="#" >福特</a></li>
+    </ul>
+  </div>
+</body>
+</html>

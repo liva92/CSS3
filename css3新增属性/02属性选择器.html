@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <style>
+    *{
+      color:#fff;
+    }
+    [temp]{
+      background-color: red;
+    }
+    [temp$='99']{
+      background-color: green;
+    }
+    [href]{
+      background: blue
+    }
+    [href^='java']{
+      background-color: yellow
+    }
+    a:first-child{
+      font-size: 30px;
+    }
+    a:nth-child(3){
+      font-size: 40px;
+    }
+    a:nth-child(2n){
+    font-size: 70px;
+    }
+
+  </style>
+</head>
+<body>
+  <a temp="mds" >hello word 1</a>
+  <a temp="mds99" id="id2" >hello word 2</a>
+  <a href="#">hello word 3</a>
+  <a href="javascript:0">hello word 4</a>
+  <a href="javascript:0">hello word 4</a>
+  <a href="javascript:0">hello word 4</a>
+  <a href="javascript:0">hello word 4</a>
+</body>
+</html>

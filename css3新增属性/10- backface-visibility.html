@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+   <style>
+    html, body, div, pre {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box-wrap {
+      width: 450px;
+      height: 300px;
+      margin: 100px auto;
+      position: relative;
+      perspective: 1000px;
+    }
+
+    .box-wrap .front, .box-wrap .back {
+      border: 1px solid #ccc;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: .8;
+      transition: all 1s ease;
+      /*背面图片隐藏*/
+      backface-visibility: hidden;
+    }
+    .box-wrap .front {
+      text-align: center;
+      background-color: rebeccapurple;
+    }
+    .box-wrap .front img {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #cccc;
+      border-radius: 50%;
+    }
+    /*背面与正面旋转角度相反*/
+    .box-wrap .back {
+      background-color: green;
+      text-align: center;
+      color: #fff;
+      transform: rotateY(-180deg);
+    }
+
+    .box-wrap:hover .front {
+      transform: rotateY(180deg);
+    }
+
+    .box-wrap:hover .back {
+      transform: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-wrap">
+    <div class="front">
+      <img src="./images/timg.jpg" alt="">
+      <h3>liva ?</h3>
+    </div>
+    <div class="back">
+      <h3>call me</h3>
+      <pre>
+          telephone:18813230425
+      </pre>
+    </div>
+  </div>
+</body>
+</html>

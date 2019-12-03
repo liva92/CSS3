@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+</head>
+<style>
+  .box {
+  text-overflow: ellipsis;
+  /*必须配合overflow：hidden才能有省略号的效果*/
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(88,90,20,.3);
+  /* 控制文本不换行 */
+  white-space: nowrap;
+}
+</style>
+<body>
+  <div class="box">
+    111111111111111111
+  </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <style>
+
+    .tex{
+      font-size: 30px;
+      color: blue;
+      transition: transform 1s ease,opacity 2s ease;
+      opacity: .1;
+      text-align: center;
+      -webkit-transform:  translate(-1000px) rotate(90deg) scale(2,2);
+    }
+
+    .in{
+      -webkit-transform: none;
+      opacity: .9
+
+    }
+  </style>
+</head>
+<body>
+  <button id="fein">飞入12</button>
+  <button id="feout">飞走</button>
+  <div class="tex">我是一段文字</div>
+  <script>
+    window.onload = function(){
+      let tex = document.querySelector('.tex')
+      document.getElementById('fein').addEventListener('click',(e) =>{
+        tex.classList.add('in')
+      })
+
+       document.getElementById('feout').addEventListener('click',(e) =>{
+        tex.classList.remove('in')
+      })
+    }
+  </script>
+</body>
+</html>
